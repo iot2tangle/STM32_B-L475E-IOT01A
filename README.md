@@ -27,4 +27,4 @@ The board is capable of connecting the device with different wireless protocols 
 
 # Available connectivity
 
-* [BLE-sender]() -- B-L475E-IOT01A will send the sensors data using *Bluetooth Low Energy (BLE)* to [I2T BLE Gateway](https://github.com/iot2tangle/Streams-ble-gateway)
+* [BLE-sender](https://github.com/iot2tangle/STM32_B-L475E-IOT01A/tree/main/BLE-sender) -- B-L475E-IOT01A will send the sensors data using *Bluetooth Low Energy (BLE)* to [I2T BLE Gateway](https://github.com/iot2tangle/Streams-ble-gateway)
