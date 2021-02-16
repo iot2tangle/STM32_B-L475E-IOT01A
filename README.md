@@ -16,7 +16,7 @@ B-L475E-IOT01A has some ST **MEMS** (Micro Electro-Mechanical Systems) and senso
 * Humidity and temperature sensor (HTS221)
 * ToF sensor to measure distance up to 2 meters (VL53L0X)
 
-## Connectivity
+## Wireless protocols
 
 The board is capable of connecting the device with different wireless protocols such as:
 
