@@ -47,7 +47,7 @@ The name of the device can be edited in the file *enable.c* the address instead 
 
 ## Flash the code
 
-Connect the board to your pc using the (USB ST-link) connector, click on *run* on the IDE and the project will be compiled and flashed on the board
+Connect the board to your pc using the (USB ST-link) connector, click on *run* on the IDE and the project will be compiled and flashed on the board. Press the reset button on the board and the device will start to work. The green led  (LD2) will fade according to the distance measured with the ToF sensor. The green power led instead will be always on.
 
 
 ## Read BLE Services and Characteristics
