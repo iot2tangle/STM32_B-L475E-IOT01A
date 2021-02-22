@@ -45,16 +45,16 @@ void getPressure(float *pressure){
 	uint8_t pressH[]={0x2a};
 	uint8_t data[2];
 
-	HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressXL,2,1);
-	HAL_I2C_Master_Transmit(&hi2c2,addressRead,data,2,1);
+        HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressXL,1,1);
+	HAL_I2C_Master_Receive(&hi2c2,addressRead,data,2,1);
 	lsb=data[0];
 
-	HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressL,2,1);
-	HAL_I2C_Master_Transmit(&hi2c2,addressRead,data,2,1);
+	HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressL,1,1);
+	HAL_I2C_Master_Receive(&hi2c2,addressRead,data,2,1);
 	lsb|=data[0]<<8;
 
-	HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressH,2,1);
-	HAL_I2C_Master_Transmit(&hi2c2,addressRead,data,2,1);
+	HAL_I2C_Master_Transmit(&hi2c2,addressWrite,pressH,1,1);
+	HAL_I2C_Master_Receive(&hi2c2,addressRead,data,2,1);
 	lsb|=data[0]<<16;
 
 
